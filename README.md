@@ -2,6 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+When downloading the files to run locally from your computer you will need to run the following 
+1. npm install react-router-dom
+2. npm install axios
+3. npm install react-router-dom react-bootstrap
+
 ## Available Scripts
 
 In the project directory, you can run:
