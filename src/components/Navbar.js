@@ -1,25 +1,36 @@
+// Import the Navbar CSS styles and logo image
+import logo from '../images/logo.png';
 import '../styles/Navbar.css';
 
+// Define a functional component called Navbar
 export default function Navbar() {
+  // Return the JSX for the Navbar component
   return (
     <nav className="nav">
-      <a href="/" className="title">
-        Project Fitness
-      </a>
+      <div >
+        <a href="/">
+          <img src={logo} alt="Project Fitness logo" width="150" />
+        </a>
+      </div>
+      
       <ul>
-        <CustomLink href="/about">About</CustomLink>
-        <CustomLink href="/contact">Contact us</CustomLink>
+        <CustomLink href="/fitness">Fitness </CustomLink>
+        <CustomLink href="/health">Health </CustomLink>
+        <CustomLink href="/about">About </CustomLink>
+        <CustomLink href="/contact">Contact us </CustomLink>
       </ul>
     </nav>
   )
 }
-  
-  function CustomLink({ href, children, ...props}){
-    const path = window.location.pathname
+// Define a separate functional component called CustomLink
+function CustomLink({ href, children, ...props}){
+  // Get the current URL path
+  const path = window.location.pathname
 
-    return(
-      <li className={path === href ? "active" : ""}>
-        <a href={href}>{children}</a>
-      </li>
-    )
-  }
+  // Render the CustomLink component with an "active" class if the URL path matches the link href
+  return(
+    <li className={path === href ? "active" : ""}>
+      <a href={href}>{children}</a>
+    </li>
+  )
+}

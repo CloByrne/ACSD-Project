@@ -1,9 +1,11 @@
+// Import the necessary components and views
 import Navbar from './components/Navbar';
 import Home from './views/Home';
 import About from './views/About';
 import ContactUs from './views/ContactUs';
 
 function App() {
+  // Define a variable to hold the component to render based on the current URL
   let component
   switch (window.location.pathname) {
     case "/":
@@ -18,6 +20,8 @@ function App() {
     default:
       component = null;
     }
+  
+  // Render the Navbar component and the appropriate view component based on the URL
   return (
     <>
       <Navbar />
