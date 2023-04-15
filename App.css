@@ -1,0 +1,19 @@
+.home-container {
+  background-image: url('./images/background.jpg');
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-text {
+  color: white;
+  text-align: center;
+}
+
+.home-sub-text {
+  color: white;
+  text-align: center;
+}
+
