@@ -1,6 +1,5 @@
 import '../styles/Navbar.css';
 import '../App.css';
-import image from '../images/background.jpg';
 
 function Home() {
   return (

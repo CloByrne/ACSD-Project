@@ -1,8 +1,10 @@
 // Import the necessary components and views
 import Navbar from './components/Navbar';
 import Home from './views/Home';
+import Fitness from './views/Fitness';
+import Health from './views/Health';
 import About from './views/About';
-import ContactUs from './views/ContactUs';
+import Contact from './views/Contact';
 
 function App() {
   // Define a variable to hold the component to render based on the current URL
@@ -11,11 +13,17 @@ function App() {
     case "/":
       component = <Home />
       break
+    case "/Fitness":
+      component = <Fitness />
+      break
+    case "/Health":
+      component = <Health />
+      break
     case "/About":
       component = <About />
       break
-    case "/ContactUs":
-      component = <ContactUs /> 
+    case "/Contact":
+      component = <Contact /> 
       break
     default:
       component = null;

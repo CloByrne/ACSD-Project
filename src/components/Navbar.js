@@ -14,10 +14,10 @@ export default function Navbar() {
       </div>
       
       <ul>
-        <CustomLink href="/fitness">Fitness </CustomLink>
-        <CustomLink href="/health">Health </CustomLink>
-        <CustomLink href="/about">About </CustomLink>
-        <CustomLink href="/contact">Contact us </CustomLink>
+        <CustomLink href="/Fitness">Fitness </CustomLink>
+        <CustomLink href="/Health">Health </CustomLink>
+        <CustomLink href="/About">About </CustomLink>
+        <CustomLink href="/Contact">Contact us </CustomLink>
       </ul>
     </nav>
   )
