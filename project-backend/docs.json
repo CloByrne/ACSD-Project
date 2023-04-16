@@ -1,46 +1,69 @@
-{
-	"openapi": "3.0.0",
-	"info": {
-		"title": "Project Fitness Backend Docs",
-		"version": "1.0.0",
-		"port": 8080
-	},
-	"paths": {
-		"/": {
-			"get": {
-				"description": "No inputs required",
-				"responses": {
-					"200": {
-						"description": "Returns an object of todos."
-					}
+"paths": {
+	"/contacts": {
+		"get": {
+			"description": "Returns an object of contacts.",
+			"responses": {
+				"200": {
+					"description": "Returns an object of contacts."
 				}
-			},
-			"post": {
-				"description": "Task required in the body of the request i.e. {task: \"Walk the cat\"}",
-				"responses": {
-					"201": {
-						"description": "Returns a blank object."
-					}
+			}
+		},
+		"post": {
+			"description": "Adds a new contact to the database. Required fields in the body of the request: {name: \"John Doe\", email: \"johndoe@example.com\", phone: \"123-456-7890\"}",
+			"responses": {
+				"201": {
+					"description": "Returns a blank object."
 				}
-			},
-			"delete": {
-				"description": "Task required in the body of the request i.e. {todo_id: 1}",
-				"responses": {
-					"204": {
-						"description": "Returns a blank object."
-					}
+			}
+		},
+		"delete": {
+			"description": "Deletes a contact from the database. Required fields in the body of the request: {contact_id: 1}",
+			"responses": {
+				"204": {
+					"description": "Returns a blank object."
 				}
-			},
-			"put": {
-				"description": "Task required in the body of the request i.e. {todo_id: 1}",
-				"responses": {
-					"204": {
-						"description": "Returns a blank object."
-					}
+			}
+		},
+		"put": {
+			"description": "Updates a contact in the database. Required fields in the body of the request: {contact_id: 1, name: \"John Doe\", email: \"johndoe@example.com\", phone: \"123-456-7890\"}",
+			"responses": {
+				"204": {
+					"description": "Returns a blank object."
 				}
 			}
 		}
-	},
-	"components": {},
-	"tags": []
+	}
+},
+
+"components": {
+	"schemas": {
+		"Contact": {
+			"type": "object",
+			"required": [
+				"name",
+				"email",
+				"phone"
+			],
+			"properties": {
+				"id": {
+					"type": "integer"
+				},
+				"name": {
+					"type": "string"
+				},
+				"email": {
+					"type": "string"
+				},
+				"phone": {
+					"type": "string"
+				}
+			}
+		}
+	}
 }
+
+"tags": [
+	{
+		"name": "Contacts"
+	}
+]

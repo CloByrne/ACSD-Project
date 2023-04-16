@@ -1,19 +1,19 @@
 const swaggerJsdoc = require('swagger-jsdoc');
+const fs = require('fs');
 
 const options = {
   definition: {
     openapi: '3.0.0',
     info: {
-      title: 'Todo Backend Docs',
+      title: 'Project Fitness Backend Docs',
       version: '1.0.0',
-      port: 8080
+      port: process.env.PORT || 8080
     },
   },
-  apis: ['./routes/index.js'], // files containing annotations as above
+  apis: ['./routes/index.js', './routes/contacts.js'],
 };
 
 const openapiSpecification = swaggerJsdoc(options);
-const fs = require('fs')
 
 fs.writeFile('./docs.json', JSON.stringify(openapiSpecification, null, '\t'), err => {
   if (err) {
