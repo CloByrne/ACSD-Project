@@ -9,8 +9,10 @@ function Contact() {
         <h1>Contact Us</h1>
       </div>
       <div className="contact-text">      
-        <p>Fill out the form below to get in touch with us.</p>
-        <ContactForm />
+        <p>Fill out the form below to get in touch with us</p>
+        <div className="contact-form-container">
+          <ContactForm />
+        </div>
       </div>
   </div>
   );

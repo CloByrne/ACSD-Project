@@ -1,5 +1,5 @@
 import '../styles/Navbar.css';
-import '../App.css';
+import '../styles/Fitness.css';
 
 function Fitness() {
     return (
