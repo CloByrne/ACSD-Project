@@ -24,11 +24,18 @@ function ContactForm() {
   
     try {
       // Send the form data to the backend using the axios library
-      const response = await axios.post('/api/contact', formData);
+      const response = await axios.post('http://localhost:5000/api/contact', formData);
   
-      // Log the form data to Postman and the console
+      // Log the form data to the console
       console.log('Form data:', formData);
-      console.log('Postman data:', response.data);
+      console.log('Response data:', response.data);
+      
+      // Reset the form data state
+      setFormData({
+        name: '',
+        email: '',
+        message: '',
+      });
     } catch (error) {
       // Handle the form submission error
       console.log(error);
@@ -80,4 +87,3 @@ function ContactForm() {
 }
 
 export default ContactForm;
-
