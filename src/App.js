@@ -5,6 +5,7 @@ import Fitness from './views/Fitness';
 import Health from './views/Health';
 import About from './views/About';
 import Contact from './views/Contact';
+import Footer from './components/Footer';
 
 function App() {
   // Define a variable to hold the component to render based on the current URL
@@ -36,6 +37,7 @@ function App() {
       <div className="App">
         {component}
       </div>
+      <Footer/>
     </>
   );
 }
