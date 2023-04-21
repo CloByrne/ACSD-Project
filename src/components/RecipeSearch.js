@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
+//Define the Recipe search component
 function RecipeSearch() {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [searchResults, setSearchResults] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');//declare state variable initilised to an empty string
+  const [searchResults, setSearchResults] = useState([]);//function that can update its value
 
+  //defines an event handler function that updates the searchTerm state variable when the user types into a search box
   const handleSearchTermChange = (event) => {
     setSearchTerm(event.target.value);
   };
 
+  //defines an event handler function that sends an HTTP request to a recipe search API when the user submits a search query, and updates the searchResults state variable with the response data.
   const handleSearchSubmit = (event) => {
     event.preventDefault();
 
@@ -33,12 +36,15 @@ function RecipeSearch() {
       });
   };
 
+  //declares state variable selectedRecipe initialised to null, and a function setSelectedRecipe that can update its value
   const [selectedRecipe, setSelectedRecipe] = useState(null);
 
+  //defines an event handler function that toggles the selectedRecipe state variable when the user clicks on a recipe in the search results
   const handleRecipeClick = (recipe) => {
     setSelectedRecipe(recipe === selectedRecipe ? null : recipe);
   };
 
+  //defines the layout and behavior of the RecipeSearch component
   return (
     <div className="recipe-search-container">
       <form onSubmit={handleSearchSubmit}>

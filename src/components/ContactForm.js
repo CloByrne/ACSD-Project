@@ -36,6 +36,10 @@ function ContactForm() {
         email: '',
         message: '',
       });
+
+    // Show a success message
+    alert('Your message was sent successfully!');
+
     } catch (error) {
       // Handle the form submission error
       console.log(error);
@@ -45,9 +49,10 @@ function ContactForm() {
   // Render the contact form
   return (
     <div className="form-container">
+      <h2>Contact Us</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="name">Name</label>
           <input
             type="text"
             id="name"
@@ -57,9 +62,10 @@ function ContactForm() {
             required
           />
         </div>
+
         <div className="form-group">
-          <label htmlFor="email">Email:</label>
-          <input
+          <label htmlFor="email">Email</label>
+          <input 
             type="email"
             id="email"
             name="email"
@@ -68,8 +74,9 @@ function ContactForm() {
             required
           />
         </div>
+
         <div className="form-group">
-          <label htmlFor="message">Message:</label>
+          <label htmlFor="message">Message</label>
           <textarea
             id="message"
             name="message"
@@ -78,12 +85,14 @@ function ContactForm() {
             required
           />
         </div>
+
         <div className="form-group">
-          <button type="submit">Submit</button>
+          <button type="submit" className="submit-button">Submit</button>
         </div>
       </form>
     </div>
   );
+  
 }
 
 export default ContactForm;
