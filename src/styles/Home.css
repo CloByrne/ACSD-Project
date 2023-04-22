@@ -1,0 +1,42 @@
+/*Written by Clodagh Byrne*/
+.home-container {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #B99855;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.home-container h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #B99855;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.home-text {
+    color: white;
+    text-align: center;
+}
+
+.home-subtitle {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.home-paragraph {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 1rem 0;
+
+}
+
+.home-body {
+    text-align: center;
+}

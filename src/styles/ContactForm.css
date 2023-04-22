@@ -1,0 +1,111 @@
+/*Written by Clodagh Byrne*/
+
+/* ContactForm.js styling */
+.contact-form-container form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 2px solid #e6e6e6;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.form-container div:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+button[type="submit"] {
+  background-color: #B99855;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #977a43;
+}
+
+/* Contact.js styling */
+
+.contact-container {
+  background-image: url('../images/contact.jpg');
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.contact-container h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #B99855;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.contact-text {
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-text p {
+  font-size: 1.5rem;
+}
+
+.contact-form-container {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+
