@@ -1,14 +1,15 @@
+/*Written by Clodagh Byrne*/
+
 footer {
-    background-color: #3B3838;
-    padding: 0.5rem;
-    align-items: center;
-    text-align: center;
-  }
+  background-color: #3B3838;
+  padding: 0.5rem;
+  align-items: center;
+  text-align: center;
+}
 
 footer p {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #fff;
-    
-  }
-  
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+}
+
