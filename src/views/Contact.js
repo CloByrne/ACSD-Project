@@ -1,6 +1,8 @@
+/*Written by Clodagh Byrne*/
+
 import React from 'react';
 import ContactForm from '../components/ContactForm';
-import '../App.css';
+import '../styles/ContactForm.css';
 
 function Contact() {
   return (
