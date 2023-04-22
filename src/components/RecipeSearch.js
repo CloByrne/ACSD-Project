@@ -1,3 +1,5 @@
+/*Written by Clodagh Byrne*/
+
 import React, { useState } from 'react';
 import axios from 'axios';
 
@@ -71,21 +73,14 @@ function RecipeSearch() {
               {selectedRecipe === result.recipe && (
                 <div className="recipe-search-result-body">
                   <p><a href={result.recipe.url} target="_blank" rel="noreferrer">View Recipe</a></p>
-                  <p>Diet Labels: {result.recipe.dietLabels.join(', ')}</p>
-                  <p>Health Labels: {result.recipe.healthLabels.join(', ')}</p>
-                  <p>Cautions: {result.recipe.cautions.join(', ')}</p>
-                  <h4>Ingredients</h4>
+                  <h4><strong>Ingredients</strong></h4>
                   <ul>
                     {result.recipe.ingredientLines.map((ingredientLine) => (
                       <li key={ingredientLine}>{ingredientLine}</li>
                     ))}
                   </ul>
-                  <h4>Additional Info</h4>
-                  <ul>
-                    {result.recipe.ingredients.map((ingredient) => (
-                      <li key={ingredient.foodId}>{ingredient.text}</li>
-                    ))}
-                  </ul>
+                  <p><strong>Health Labels:</strong> {result.recipe.healthLabels.join(', ')}</p>
+                  <p><strong>Cautions:</strong> {result.recipe.cautions.join(', ')}</p>
                 </div>
               )}
             </li>

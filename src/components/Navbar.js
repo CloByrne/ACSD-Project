@@ -1,3 +1,5 @@
+/*Written by Clodagh Byrne*/
+
 // Import the Navbar CSS styles and logo image
 import logo from '../images/logo.png';
 import '../styles/Navbar.css';
@@ -15,7 +17,7 @@ export default function Navbar() {
       
       <ul>
         <CustomLink href="/Fitness">Fitness </CustomLink>
-        <CustomLink href="/Health">Health </CustomLink>
+        <CustomLink href="/Recipes">Recipes </CustomLink>
         <CustomLink href="/About">About </CustomLink>
         <CustomLink href="/Contact">Contact us </CustomLink>
       </ul>
