@@ -1,6 +1,9 @@
-.fitness-container {
+.fitness-hero {
     background-image: url('../images/fitness.jpg');
     background-size: cover;
+}
+
+.fitness-container {
     height: 50vh;
     display: flex;
     justify-content: center;
@@ -21,4 +24,49 @@
 .fitness-text {
     color: white;
     text-align: center;
+}
+
+/* Denis Murray */
+.exercises-container {
+    /* width: 90%; */
+}
+
+.exercises-container h2 {
+    margin: 5rem 0;
+}
+
+.secondary-text {
+    color: black;
+    text-align: center;
+}
+
+.exercise-section {
+    /* width: 90%; */
+    background-color: lightgreen ;
+}
+
+/* .exercise-buttons {
+    margin: 5rem;
+} */
+
+
+/* Media Queries */
+/* Mobile by default followed by tablet, followed by Desktop */
+@media (min-width: 1px){
+    
+}
+
+/* Large Phone to Tablet */
+@media (min-width: 768px){
+   
+}
+
+/* Desktop */
+@media (min-width: 1200px){
+
+    
+}
+
+@media (min-width: 1400px) {
+    
 }
