@@ -1,22 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.8d7f9b52.css",
-    "main.js": "/static/js/main.bc75f0df.js",
+    "main.css": "/static/css/main.b1c8266a.css",
+    "main.js": "/static/js/main.d0d4b5aa.js",
     "static/js/787.4a3c6926.chunk.js": "/static/js/787.4a3c6926.chunk.js",
     "static/media/fitness.jpg": "/static/media/fitness.a96b4e27ae83cd99ece7.jpg",
     "static/media/fruit.jpg": "/static/media/fruit.b61e9488a5916ba17a77.jpg",
+    "static/media/homeFitness.jpg": "/static/media/homeFitness.5a40a5a4ed8576fe11d3.jpg",
+    "static/media/workoutFriends.jpg": "/static/media/workoutFriends.1d6efa9bdf3189ceb907.jpg",
+    "static/media/myBody.jpg": "/static/media/myBody.48741ffccae8eed7afc8.jpg",
+    "static/media/foodRule.jpg": "/static/media/foodRule.75801148c559d805591d.jpg",
     "service-worker.js": "/service-worker.js",
     "static/media/about.jpg": "/static/media/about.24409bf467ed11cb4da6.jpg",
     "static/media/logo.png": "/static/media/logo.00ba0d2f44943fd30efd.png",
+    "static/media/scales.jpg": "/static/media/scales.1b23fef921329f1cba08.jpg",
+    "static/media/yoga.jpg": "/static/media/yoga.7d6bab2d52a4cb0c88b5.jpg",
     "static/media/contact.jpg": "/static/media/contact.09d4ca898a13e1fe37fa.jpg",
     "static/media/background.jpg": "/static/media/background.25a581c959f575fa3bc2.jpg",
     "index.html": "/index.html",
-    "main.8d7f9b52.css.map": "/static/css/main.8d7f9b52.css.map",
-    "main.bc75f0df.js.map": "/static/js/main.bc75f0df.js.map",
+    "main.b1c8266a.css.map": "/static/css/main.b1c8266a.css.map",
+    "main.d0d4b5aa.js.map": "/static/js/main.d0d4b5aa.js.map",
     "787.4a3c6926.chunk.js.map": "/static/js/787.4a3c6926.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d7f9b52.css",
-    "static/js/main.bc75f0df.js"
+    "static/css/main.b1c8266a.css",
+    "static/js/main.d0d4b5aa.js"
   ]
 }
