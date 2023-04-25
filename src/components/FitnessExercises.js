@@ -7,6 +7,7 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import ExerciseDisplay from './ExerciseDisplay';
 import Modal from 'react-bootstrap/Modal';
+import SimpleMap from './Map';
 
 function FitnessExercises () {
 
@@ -69,6 +70,7 @@ function FitnessExercises () {
                 </Row>
             </Container>
 
+           
             {/* Modal settings, xl sizing, outside click to close enabled */}
             <Modal size="xl" show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
@@ -76,15 +78,15 @@ function FitnessExercises () {
                 </Modal.Header>
                 <Modal.Body>
                     {
-                         <Row className="exercise-box">
-                            {
-                            receivedExercises.map(function (i, index) {
-                                return (
-                                    <ExerciseDisplay name={i.name} muscle={i.muscle} difficulty={i.difficulty} instructions={i.instructions} key={index}/>
-                                )
-                             })
-                            }
-                        </Row>
+                    <Row className="exercise-box">
+                        {
+                        receivedExercises.map(function (i, index) {
+                            return (
+                                <ExerciseDisplay name={i.name} muscle={i.muscle} difficulty={i.difficulty} instructions={i.instructions} key={index}/>
+                            )
+                            })
+                        }
+                    </Row>
                     }
                 </Modal.Body>
                 <Modal.Footer>
