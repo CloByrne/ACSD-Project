@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 
 function ExerciseDisplay (props) {
     return (
-            <Col xs={12} sm={6} md={4}>
+            <Col className="individual-exercises" xs={12} md={6}>
                 <h2>{props.name}</h2>
                 <h4>{props.muscle}</h4>
                 <h5>{props.difficulty}</h5>
