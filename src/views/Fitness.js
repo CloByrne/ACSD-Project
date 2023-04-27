@@ -10,12 +10,12 @@ import OpeningHours from '../components/OpeningHours';
 
 function Fitness() {
     return (
-        <div>
+        <div className="fitness-view">
             <div className="fitness-hero">
                 <div className="fitness-container">
                     <div className="fitness-text">
-                        <h1>Welcome to the Fitness page</h1>
-                        <div className="fitness-sub-text">
+                        <h1>Fitness</h1>
+                        <div className="fitness-subtext">
                             <p>To get you started, click the buttons below to receive a list of exercises to target specific muscle groups</p>
                         </div>
                     </div>
@@ -28,7 +28,7 @@ function Fitness() {
             <Container className="fitness-bootstrap-container">
                 <Row>
                     <Col sm={12} md={12} className="secondary-text title" >
-                        <h2>Or visit us in person for an session with our trainers!</h2>
+                        <h2>Or visit us in person for a personal exercise routine with our trainers!</h2>
                     </Col>
                 </Row>
                 <Row>
@@ -39,7 +39,6 @@ function Fitness() {
                         <div id="map">
                             <SimpleMap />
                         </div>
-        
                     </Col>
                 </Row>
             </Container>

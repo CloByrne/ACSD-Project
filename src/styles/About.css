@@ -1,8 +1,16 @@
-.about-container {
-    background-image: url('../images/about.jpg');
-    background-size: cover;
-    height: 50vh;
+/* Denis Murray */
+/* Design based on Mobile First Development principles */
+#about-view {
+    font-size: large;
+}
+
+#showcase {
+    background: url(../images/about2\(smaller\).png) no-repeat center center/cover;
+    height: 70vh;
     display: flex;
+}
+
+.about-container {
     justify-content: center;
     align-items: center;
     color: white;
@@ -10,9 +18,14 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.about-container h3 {
+    padding: 0 6vw 0 6vw;
+}
+
 .about-container h1 {
     font-size: 3rem;
     text-align: center;
+    margin-top: 5rem;;
     margin-bottom: 40px;
     border-bottom: 2px solid #B99855;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -21,4 +34,66 @@
 .about-text {
     color: white;
     text-align: center;
+}
+
+#about-us-section {
+    /* border: 1px red solid; */
+    height: 55vh;
+      
+
+}
+
+#about-us-section .blurb {
+    /* border: 1px black solid; */
+}
+
+#about-us-section .blurb-pic {
+    /* border: 1px blue solid; */
+    background: url(../images/dumbbell.jpg) no-repeat center center/cover;
+    height: 100%;
+
+}
+
+.blurb-text {
+    text-align: center;
+    padding: 0 5vw 0 5vw;
+}
+
+.blurb-text h2{
+    padding: 4vh 0 2vh 0;
+}
+
+
+/* Height for devices larger than 992px (LARGE BREAKPOINT) */
+@media (min-width: 992px) {
+    #about-view {
+        font-size: x-large;
+    }
+
+    #showcase {
+        height: 75vh;
+        font-size: xx-large;
+      
+    }
+
+    .about-container h1 {
+        font-size: 4rem;
+    }
+
+    #about-us-section {
+        /* border: 1px red solid; */
+        height: 75vh;
+    }
+}
+
+@media (min-width: 1400px) {
+    #about-us-section {
+        /* border: 1px red solid; */
+        height: 60vh;
+    }
+
+    
+.blurb-text h2{
+    padding: 8vh 0 4vh 0;
+}
 }

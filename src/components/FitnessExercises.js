@@ -7,7 +7,6 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import ExerciseDisplay from './ExerciseDisplay';
 import Modal from 'react-bootstrap/Modal';
-import SimpleMap from './Map';
 
 function FitnessExercises () {
 
