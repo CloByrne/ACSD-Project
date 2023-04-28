@@ -22,7 +22,6 @@ const LocationPin = ({ text }) => (
     };
   
     return (
-      // Important! Always set the container height explicitly
         <GoogleMapReact
           bootstrapURLKeys={{ key: "AIzaSyDH9ZcE62HMuWdR_kO_Iq0LY-dJiWQ0JDk" }}
           defaultCenter={defaultProps.center}
