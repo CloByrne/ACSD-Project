@@ -1,7 +1,7 @@
 // Denis Murray
 import React from 'react'
 import GoogleMapReact from 'google-map-react'
-import { Icon, InlineIcon } from '@iconify/react'
+import { Icon } from '@iconify/react'
 // import locationIcon from '@iconify/icons-mdi/map-marker'
 
 // Default marker from package

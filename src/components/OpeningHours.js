@@ -2,8 +2,8 @@ import React from 'react'
 
 function OpeningHours() {
     return (
-        <div>
-            <h2 className="secondary-text">Opening Hours</h2>
+        <div id="opening-hours">
+            <h2 className='about-subheading'>Opening Hours</h2>
             <ul>
                 <li>Monday 8am - 5pm</li>
                 <li>Tuesday 10am - 5pm</li>

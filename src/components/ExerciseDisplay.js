@@ -1,14 +1,11 @@
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
 
 function ExerciseDisplay (props) {
     return (
-            <Col className="individual-exercises" xs={12} md={6}>
+            <Col className="individual-exercises" xs={12} xl={6}>
                 <h2>{props.name}</h2>
-                <h4>{props.muscle}</h4>
-                <h5>{props.difficulty}</h5>
+                <h4>{props.muscle.toUpperCase()}</h4>
+                <h5>Difficulty Level: {props.difficulty.toUpperCase()}</h5>
                 <p>{props.instructions}</p>
             </Col>  
     )
