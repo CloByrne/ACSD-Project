@@ -29,11 +29,13 @@ function About() {
                     </Col>
                 </Row>
 
-                <Row xs={12} className="about-heading">
-                    <h2 class="about-subheading">Visit us in person for a personal exercise routine with our trainers!</h2>
+                <Row  className="about-heading">
+                    <Col xs={12}> 
+                        <h2 className="about-subheading">Visit us in person for a personal exercise routine with our trainers!</h2>
+                    </Col>
                 </Row>
 
-                <Row>
+                <Row className="opening-maps-section">
                     <Col xs={12} sm={12} lg={5} id="opening-hours-box">
                         <OpeningHours />
                     </Col>

@@ -41,7 +41,7 @@ function FitnessExercisesChest () {
     return (
         <div>
             <h2 className='fitness-subheading'>Chest Exercises</h2>
-            <p className="fitness-subtext">Chest exercises are a crucial component of a well-rounded fitness regimen, as they help strengthen and tone the chest, shoulder, and tricep muscles. By incorporating various chest exercises into your workout routine, you can improve your upper body strength and achieve a more defined physique. Some common chest exercises include movements that involve pressing, pulling, and squeezing the chest muscles. Chest exercises are also fun and a easy area to target.</p>
+            <p className="fitness-subtext">Chest exercises are a crucial component of a well-rounded fitness regimen, as they help strengthen and tone the chest, shoulder, and tricep muscles. By incorporating various chest exercises into your workout routine, you can improve your upper body strength and achieve a more defined physique. Some common chest exercises include movements that involve pressing, pulling, and squeezing the chest muscles. Chest exercises are also fun and a easy area to target and enable a fantastic pump.</p>
             <button value="biceps" className="exercise-btn" onClick={function(event){GetExercises(event); setShow(true)}}>
                 Browse Chest Exercises
             </button>
