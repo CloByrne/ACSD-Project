@@ -1,16 +1,12 @@
 // Denis Murray
 import {useState} from 'react';
 import axios from 'axios';
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import ExerciseDisplay from './ExerciseDisplay';
 import Modal from 'react-bootstrap/Modal';
 
-function FitnessExercises () {
-
-    const [buttonClicked, setButtonClicked] = useState(false);
+function FitnessExercisesBiceps () {
     const [exerciseChosen, setExerciseChosen] = useState("");
     const [receivedExercises, setReceivedExercises] = useState([]);
 
@@ -19,14 +15,12 @@ function FitnessExercises () {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-    // Handle Exercise Chosen
-    
     async function GetExercises(e) {
         e.preventDefault();
         const options = {
             method: 'GET',
             url: 'https://exercises-by-api-ninjas.p.rapidapi.com/v1/exercises',
-            params: {muscle: exerciseChosen},
+            params: {muscle: "biceps"},
             headers: {
               'content-type': 'application/octet-stream',
               'X-RapidAPI-Key': '880fc9f306mshac2dc31075a9020p11af9bjsnab33e068fb58',
@@ -46,38 +40,20 @@ function FitnessExercises () {
 
     return (
         <div>
-            <Container className="exercise-section">
-                <p className="fitness-subtext">We have a huge collection of exercises available for you to browse. Whether you are looking to target a specific muscle group, or are looking for a general workout routine, we've got you covered!</p>
-                <Row className="exercise-buttons">
-                    <Col>
-                        <button className="exercise-btn" onClick={function(event){setExerciseChosen(''); GetExercises(event); setButtonClicked(true); setShow(true)}}>
-                            Browse some of our exercises
-                        </button>
-                    </Col>
-                    {/* <Col xs={4} md={3}>
-                        <Button variant="secondary" onClick={function(event){setExerciseChosen('biceps'); GetExercises(event); setButtonClicked(true); setShow(true)}}>Arms</Button>
-                    </Col>
-                    <Col xs={4} md={3}>
-                        <Button variant="secondary" onClick={function(event){setExerciseChosen('glutes'); GetExercises(event); setButtonClicked(true); setShow(true)}}>Legs</Button>
-                    </Col>
-                    <Col xs={4} md={3}>
-                        <Button variant="secondary" onClick={function(event){setExerciseChosen('chest'); GetExercises(event); setButtonClicked(true); setShow(true)}}>Chest</Button>
-                    </Col>
-                    <Col xs={4} md={3}>
-                        <Button variant="secondary" onClick={function(event){setExerciseChosen('lower_back'); GetExercises(event); setButtonClicked(true); setShow(true)}}>Back</Button>
-                    </Col> */}
-                </Row>
-            </Container>
-
-           
+            <h2 className='fitness-subheading'>Arms Exercises</h2>
+            <p className="fitness-subtext">Arm exercises are an essential part of any comprehensive strength training routine, as they help develop and tone the muscles of the upper body, including the biceps, triceps, and forearms. By incorporating various arm exercises into your workout regimen, such as push-ups, dips, and cable curls, you can enhance your upper body strength and muscular endurance, while achieving a more defined physique. Arm exercises also help improve overall functional strength, making everyday tasks easier to perform.</p>
+            <button value="biceps" className="exercise-btn" onClick={function(event){GetExercises(event); setShow(true)}}>
+                Browse Biceps Exercises
+            </button>
+        
             {/* Modal settings, xl sizing, outside click to close enabled */}
             <Modal size="xl" show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                <Modal.Title>Sample Exercises </Modal.Title>
+                <Modal.Title>Arms Exercises </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     {
-                    <Row className="exercise-box">
+                    <Row className="">
                         {
                         receivedExercises.map(function (i, index) {
                             return (
@@ -95,15 +71,9 @@ function FitnessExercises () {
                 </Modal.Footer>
             </Modal>
             
-            {
-                
-            }
-
         </div>
     )
 }
 
 
-
-
-export default FitnessExercises;
+export default FitnessExercisesBiceps;
