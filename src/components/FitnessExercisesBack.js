@@ -41,7 +41,7 @@ function FitnessExercisesBack () {
     return (
         <div>
             <h2 className='fitness-subheading'>Back Exercises</h2>
-            <p className="fitness-subtext">Back exercises are an integral part of any strength training program, as they target the muscles of the upper, mid, and lower back, including the lats, traps, and erector spinae. Strong back muscles play a critical role in maintaining good posture, supporting the spine, and reducing the risk of injury. By incorporating various back exercises into your workout routine, such as pull-ups, rows, and hyperextensions, you can improve your upper body strength and posture, while also achieving a more defined back and reducing the risk of back pain.</p>
+            <p className="fitness-subtext">Back exercises are an integral part of any strength training program, as they target the muscles of the upper, mid, and lower back, including the lats, traps, and erector spinae. Strong back muscles play a critical role in maintaining good posture, supporting the spine, and reducing the risk of injury. By incorporating various back exercises into your workout routine, such as pull-ups, rows, and hyperextensions, you can improve your upper body strength and posture, while also achieving a more defined back and reducing the risk of severe back pain.</p>
             <button value="biceps" className="exercise-btn" onClick={function(event){GetExercises(event); setShow(true)}}>
                 Browse Biceps Exercises
             </button>
